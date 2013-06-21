@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <style type="text/css" media="all">
+      textarea {
+        margin-left: 10px;
+        margin-right: 10px;
+        
+      }
+	  
+    </style>
+      
+<link rel="stylesheet" type="text/css" href="widget.css"/>
+
+
+</head>
+ 
+<body style="background:#FFFFFF">
+<div class="menu">
+    <ul>
+	  <li class="single-link" id="lab1">
+		<a href="#" class="tlink" id="ab1">Add New</a>
+		</li>
+        <li class="single-link"  id="lab5">
+        <a href="#" class="tlink" id="ab5">Login</a>
+        </li>
+      <li class="single-link"  id="lab2">
+		<a href="#" class="tlink" id="ab2">Queue Status</a>
+		</li>
+	  <li class="single-link"  id="lab3">
+		<a href="#" class="tlink" id="ab3">Settings</a>
+		</li>
+	  <li class="single-link"  id="lab4">
+		<a href="#" class="tlink" id="ab4">Analyzed links</a>
+		</li>
+	  
+	</ul>
+	
+	
+</div>
+<br>
+
+
+<div class="tabs" id="tab1">
+    <div class="notification" id="notification" style="display:none">
+        
+    </div>
+
+    <div class="searchContainer">
+        <form>
+            <input id="field" name="field" class="field" type="text" value="Quick add link"/>
+            <div id="delete"><span id="x">x</span></div>
+            <!--<input id="submit" name="submit" type="submit" value="Add" style="color:#FFFFFF;" onClick="return false;"/>-->
+
+            <input id="submit3" name="submit3" type="submit" value="Add to Queue" style="color:#FFFFFF; width: 93%; margin-top: 10px;" onClick="return false;"/>
+            <input id="submit4" name="submit4" type="submit" value="Analyze this page for links" style="color:#FFFFFF; width: 93%; margin-top: 10px;" onClick="return false;"/>
+
+            <div class="loginp" style="width: 90%; margin-top: 30px; "><ul> <li> You can add any working direct link.</li><li> Maximum file size that can be added is around 25MB.</li><li> Download links which require you to login (those which need authorization), or those which require referer information to be sent are not supported. The link must be public.</li><li>Click 'Analyze this page for links' to extract links/images from the current page.</li></ul></div>
+
+        </form>
+    </div>
+
+</div>
+
+<div class="tabs" id="tab5">
+    <div class="searchContainer">
+    <input id="submit2" name="submit" type="submit" value="Click here to login to Google Drive" style="color:#FFFFFF; width: 100%; float: center;" onClick="return false;"/>
+    <div class="loginp" style="width: 90%; margin-top: 30px; "><ul> <li>You need to log in to your Google Account as you always do in the tab that opens after clicking the above button.</li><li> Make sure you check "Remember Me" if you need 'Save to Google Drive' to remember your login persistently (even after Firefox restart).</li><li> After you have logged in, you can close the tab and start adding links to 'Save to Google Drive'.</li></ul></div>
+</div>
+</div>
+
+<div class="tabs" id="tab2">
+    <div class="searchContainer">
+    <input id="submit5" name="submit5" type="submit" value="Initiate Queue" style="color:#FFFFFF; width: 100%;  margin-bottom: 5px; display:none" onClick="return false;"/>
+    <p class="emptyq"> Queue is now empty  :(</p>
+    </div>
+
+</div>
+
+
+<div class="tabs" id="tab3">
+    <div class="settholder">
+    <h3>Notification Settings</h3>
+        <input type="checkbox" name="notif_login" id="notif_login" value="1">  Notify on Login Failure<br>
+        <input type="checkbox" name="notif_error" id="notif_error" value="1">  Notify on Link Error<br>
+        <input type="checkbox" name="notif_succ"  id="notif_succ" value="1">  Notify on Successful Save<br>
+        <h3>Default action to take when the icon in add-on bar is right-clicked</h3>
+        (Add-on bar is usually located in the bottom part of Firefox window and can be accessed using ctrl + '/')
+        <select name="def_action" id="def_action" size="1">
+              <option value="1"> Open menu</option>
+              <option value="2"> Add link from Clipboard</option>
+              <option value="3"> Analyze current page links</option>
+        </select> 
+        <h3>General Settings</h3>
+        <input type="checkbox" name="instant_queue" id="instant_queue" value="1">  Start queue immediately after adding link<br>
+        <input id="save" name="submitsave" type="submit" value="Save" style="color:#FFFFFF; width: 35%; float: left;" onClick="return false;"/>
+        <input id="close" name="submitclose" type="submit" value="Close" style="color:#FFFFFF; width: 35%; float: right;" onClick="return false;"/>
+    </div>
+    
+    </div>
+
+
+<div class="tabs" id="tab4">
+    <div class="searchContainer">
+<input id="submit6" name="submit6" type="submit" value="Add selected links" style="color:#FFFFFF; width: 100%; margin-top: 10px; display:none" onClick="return false;"/>
+</div>
+ </div>
+</body>
+ 
+</html>

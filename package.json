@@ -1,0 +1,10 @@
+{
+    "name": "save_to_google_drive", 
+    "license": "MPL 2.0", 
+    "author": "akarthik10", 
+    "version": "0.3", 
+    "fullName": "Save to Google Drive", 
+    "id": "jid1-oN9DnHLeslAVJA", 
+    "description": "Save files/images you find online easily in Google Drive. You don't have to actually download the complete file,the link is sufficient.",
+	"icon": "data/widget/gd_on.png" 
+}

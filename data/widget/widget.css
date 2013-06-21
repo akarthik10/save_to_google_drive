@@ -1,0 +1,303 @@
+/*menu*/
+
+body{
+padding:0;
+margin:5px;
+text-align: justify;
+}
+.menu{
+position:relative;
+top:0;
+left:0;
+width:100%;
+min-width:400px;
+font: bold 13px/27px Arial,sans-serif;
+color:#3366cc;
+height:30px;
+background:#2D2D2D;
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/*
+.menu a:hover{
+background-color:#676767;
+color:#FFFFFF;
+}
+*/
+
+.menu a{
+text-decoration:none;
+padding:6px 8px 7px;
+color:#CCCCCC;
+outline:none;
+}
+.menu ul{
+list-style:none;
+margin:0;
+padding:0 0 0 10px;
+}
+.menu ul li{
+padding:0;
+float:left;
+}
+.menu ul li ul li{
+padding:0;
+float:none;
+margin:0 0 0 0px;
+width:100%;
+}
+.menu ul li ul{
+position:absolute;
+border:1px solid #C3D1EC;
+/*box-shadow*/
+-webkit-box-shadow:0 1px 5px #CCCCCC;
+   -moz-box-shadow:0 1px 5px #CCCCCC;
+        box-shadow:0 1px 5px #CCCCCC;
+margin-top:-1px;
+display:none;
+padding:0px 16px 0px 0;
+}
+.active ul{
+display:block !important;
+}
+.single ul{
+display:block !important;
+
+}
+
+.single-link{
+    border-top:3px solid #2D2D2D;
+}
+.active a{
+background-color:white;
+border:1px solid #C3D1EC;
+border-bottom:0;
+/*box-shadow*/
+-webkit-box-shadow:0 -1px 5px #CCCCCC;
+   -moz-box-shadow:0 -1px 5px #CCCCCC;
+        box-shadow:0 -1px 5px #CCCCCC;
+display:block;
+height:29px;
+padding:0 8px 0 8px;
+position:relative;
+z-index:1;
+color:#3366CC;
+}
+/*Styling for the link of the current page*/
+.current a{
+background-color:#2D2D2D;
+border-top:3px solid #DD4B39;/*red ribbon at top*/
+border-bottom:0;
+display:block;
+height:25px;
+padding:0 8px 0 8px;
+position:relative;
+z-index:1;
+color:#FFFFFF;
+font-weight:bold;
+}
+.active a:hover{
+background-color:white;
+color:#3366CC;
+}
+
+.active ul a:hover{
+background-color:#e4ebf8;
+}
+
+.active ul a{
+border:0 !important;
+-moz-box-shadow:0 0 0 #CCCCCC;
+box-shadow:0 0 0 #CCCCCC;
+border:0;
+width:100%;
+}
+.arrow{
+border-color:#C0C0C0 transparent white;
+border-style:solid dashed dashed;
+margin-left:5px;
+position:relative;
+top:10px;
+}
+.mid-line{
+background-color:#FFF;
+border-top:1px solid #e5e5e5;
+font-size:0;
+}
+
+/* search bar */
+/* div container containing the form  */
+.searchContainer {
+    margin:20px;
+}
+ 
+/* Style the search input field. */
+#field {
+    float:left;
+    width:84%;
+    height:27px;
+    line-height:27px;
+    text-indent:10px;
+    font-family:arial, sans-serif;
+    font-size:1em;
+    color:#333;
+    background: #fff;
+    border:solid 1px #d9d9d9;
+    border-top:solid 1px #c0c0c0;
+    border-right:none;
+}
+ 
+/* Style the "X" text button next to the search input field */
+#delete {
+    float:left;
+    width:16px;
+    height:29px;
+    line-height:27px;
+    margin-right:15px;
+    padding:0 10px 0 10px;
+    font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+    font-size:22px;
+    background: #fff; 
+    border:solid 1px #d9d9d9;
+    border-top:solid 1px #c0c0c0;
+    border-left:none;
+}
+/* Set default state of "X" and hide it */
+#delete #x {
+    color:#A1B9ED;
+    cursor:pointer;
+    display:none;
+}
+/* Set the hover state of "X" */
+#delete #x:hover {
+    color:#36c;
+}
+/* Syle the search button. Settings of line-height, font-size, text-indent used to hide submit value in IE */
+#submit,#submit2, #submit3 ,#submit4, #submit5,#submit6, #save, #close {
+    cursor:pointer;
+    width:70px;
+    height: 31px;
+    line-height:0;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:16px;
+     color: transparent;
+    background:#4d90fe center;
+    border: 1px solid #3079ED;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+/* Style the search button hover state */
+#submit:hover, #submit2:hover, #submit3:hover, #submit4:hover, #submit5:hover,#submit6:hover, #save:hover, #close:hover {
+    background:#357AE8;
+    border: 1px solid #2F5BB7;
+}
+/* Clear floats */
+.fclear {clear:both}
+
+.notification{
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:18px;
+    margin: 15px;
+    padding: 10px;
+    /*color: #D12F13;
+    border: 2px solid #D12F13;
+    */
+    color: #2D2D2D;
+    border: 2px solid #2D2D2D;
+    
+}
+
+.item,.itemsel{
+   /* background:#3E6D8E;*/
+   background: #2D2D2D;
+    color: #FFFFFF;
+    border: 2px #FFFFFF;
+    width: 91%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:15px;
+    margin: 10px;
+}
+
+.itemerror{
+   /* background:#3E6D8E;*/
+   background: #DD4B39;
+    color: #FFFFFF;
+    border: 2px #FFFFFF;
+    width: 91%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:15px;
+    margin: 10px;
+}
+
+.itemproc,.itemtick{
+   /* background:#3E6D8E;*/
+   background: #3E6D8E;
+    color: #FFFFFF;
+    border: 2px #FFFFFF;
+    width: 91%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:15px;
+    margin: 10px;
+}
+
+.itemcomplete{
+   /* background:#3E6D8E;*/
+   background: #0F9D58;
+    color: #FFFFFF;
+    border: 2px #FFFFFF;
+    width: 91%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:15px;
+    margin: 10px;
+}
+
+.item,.itemsel, .itemerror, .itemproc,.itemcomplete{
+    word-wrap: break-word;
+}
+
+
+.loginp{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:16px;
+    width: 90%;
+}
+
+.emptyq{
+     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:16px;
+    width: 90%;
+    text-align: center;
+}
+
+.closebtn{
+    font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+    font-size:18px;
+    float:right;
+    cursor:pointer;
+}
+
+.checktick{
+    float:right;
+    cursor:pointer;
+    }
+
+.settholder{
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:16px;
+    float:center;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#save{
+    margin: 15px;
+}
+
+#close{
+    margin: 15px 35px 15px 0;
+}
+
